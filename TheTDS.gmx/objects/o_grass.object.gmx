@@ -8,7 +8,30 @@
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
-    <event eventtype="0" enumb="0">
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//Nothing -.-
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="2">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -46,20 +69,41 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>randomize() 
+            <string>var i, j, q;
+randomize() 
 surface_set_target(s)
 repeat(2){
 for(a=1; a&gt;0; a-=0.01){
-        draw_set_colour(merge_colour(c_green, c_lime, a))
+        q = merge_colour(c_green, c_lime, a)
         repeat(room_width*room_height/1000){
             i = irandom(room_width)
             j = irandom(room_height)
-            draw_rectangle(i,j,i+4,j+3,0)
+            draw_sprite_ext(s_bp,0,i,j,1,1,45,q,0.9)
         }
     }
 }
 surface_reset_target()
-display_reset(0,1)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>alarm[0] = 10
 </string>
           </argument>
         </arguments>
@@ -82,7 +126,30 @@ display_reset(0,1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>draw_surface(s,0,0)
+            <string>if !alarm[0] draw_surface(s,0,0)
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="9" enumb="81">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>game_restart()
 </string>
           </argument>
         </arguments>

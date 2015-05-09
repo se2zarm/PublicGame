@@ -7,6 +7,7 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\s_hero</sprite>
+    <sprite>sprites\s_bp</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\b_EMPTY</background>
