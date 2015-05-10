@@ -13,6 +13,9 @@
     <background>background\b_EMPTY</background>
   </backgrounds>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\angle_stream.gml</script>
+  </scripts>
   <objects name="objects">
     <object>objects\o_grass</object>
     <object>objects\o_hero</object>
