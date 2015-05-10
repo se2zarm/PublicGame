@@ -16,15 +16,19 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\get_wpsprite.gml</script>
-    <script>scripts\init_wp.gml</script>
+<<<<<<< HEAD
     <script>scripts\set_wp.gml</script>
+    <script>scripts\init_wp.gml</script>
+    <script>scripts\get_wpsprite.gml</script>
+=======
+    <script>scripts\angle_stream.gml</script>
+>>>>>>> origin/master
   </scripts>
   <objects name="objects">
-    <object>objects\o_enemy</object>
     <object>objects\o_grass</object>
-    <object>objects\o_guns</object>
     <object>objects\o_hero</object>
+    <object>objects\o_guns</object>
+    <object>objects\o_enemy</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\room0</room>
