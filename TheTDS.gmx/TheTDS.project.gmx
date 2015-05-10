@@ -16,9 +16,13 @@
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
+<<<<<<< HEAD
     <script>scripts\set_wp.gml</script>
     <script>scripts\init_wp.gml</script>
     <script>scripts\get_wpsprite.gml</script>
+=======
+    <script>scripts\angle_stream.gml</script>
+>>>>>>> origin/master
   </scripts>
   <objects name="objects">
     <object>objects\o_grass</object>

@@ -9,6 +9,7 @@
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
+<<<<<<< HEAD
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -81,6 +82,8 @@ image_index = 0
       </action>
     </event>
     <event eventtype="3" enumb="0">
+=======
+>>>>>>> origin/master
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -97,12 +100,19 @@ image_index = 0
         <arguments>
           <argument>
             <kind>1</kind>
+<<<<<<< HEAD
             <string>direction = point_direction(x,y, mouse_x,mouse_y)
 image_angle = direction
+=======
+            <string>Speed = 4
+SpeedRotation = 6
+>>>>>>> origin/master
 </string>
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -120,6 +130,7 @@ image_angle = direction
           <argument>
             <kind>1</kind>
             <string>if keyboard_check(ord('W')){
+<<<<<<< HEAD
     y -= 3
 }
 
@@ -282,8 +293,44 @@ for(i=0; i&lt;ds_list_size(gunstat); i++){
         s += string(q[j])+"#"
     }
     s +="##"
+=======
+    y -= Speed
+}
+
+if keyboard_check(ord('A')){
+    x -= Speed
+}
+
+if keyboard_check(ord('S')){
+    y += Speed
+}
+
+if keyboard_check(ord('D')){
+    x += Speed
+>>>>>>> origin/master
 }
 show_message(s)
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>image_angle = angle_stream( SpeedRotation , point_direction(x,y, mouse_x,mouse_y) , image_angle)
 </string>
           </argument>
         </arguments>
@@ -301,5 +348,8 @@ show_message(s)
   <PhysicsObjectFriction>0.200000002980232</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>
   <PhysicsObjectKinematic>0</PhysicsObjectKinematic>
-  <PhysicsShapePoints/>
+  <PhysicsShapePoints>
+    <point>23,18</point>
+    <point>49,49</point>
+  </PhysicsShapePoints>
 </object>
